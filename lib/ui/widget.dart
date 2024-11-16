@@ -14,9 +14,9 @@ class WidgetLearnPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Widget Learn Page'),
+    return Scaffold(backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.black,
+        title: const Text('Widget Learn Page',style: TextStyle(color: Colors.white),),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -45,7 +45,7 @@ class WidgetLearnPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(item['icon'], size: 40.0, color: Colors.blue),
+                    Icon(item['icon'], size: 40.0, color: Colors.black),
                     const SizedBox(height: 8.0),
                     Text(
                       item['title'],
