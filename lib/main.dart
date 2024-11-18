@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practical_project/popupscreen.dart';
 import 'package:practical_project/studentSudent.dart';
 import 'package:practical_project/ui/alert.dart';
 
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-        home:WidgetLearnPage ()
+        home:PopupExample ()
     );
   }
 }
