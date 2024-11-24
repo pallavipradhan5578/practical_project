@@ -55,3 +55,34 @@ class _AlertInFlutterState extends State<AlertInFlutter> {
     );
   }
 }
+
+class SquareRoot extends StatelessWidget {
+  const SquareRoot({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(body: SafeArea(
+      child: Center(
+        child: RichText(
+          text: TextSpan(
+            text: 'Hello ', // The base text
+            style: TextStyle(fontSize: 20, color: Colors.black), // Default style
+            children: <TextSpan>[
+              TextSpan(
+                  text: 'world',
+                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
+              TextSpan(
+                  text: ' and ',
+                  style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+              TextSpan(
+                  text: 'colorful!',
+                  style: TextStyle(color: Colors.red, fontSize: 24)),
+            ],
+          ),
+        ),
+      ),
+    ),
+    );
+
+  }
+}
