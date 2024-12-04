@@ -22,11 +22,12 @@ class WidgetLearnPage extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, // Number of items in each row
-            mainAxisSpacing: 8.0, // Space between rows
-            crossAxisSpacing: 8.0, // Space between columns
-            childAspectRatio: 1.0, // Aspect ratio of each grid item
+            crossAxisCount: 2,
+            mainAxisSpacing: 8.0,
+            crossAxisSpacing: 8.0,
+            childAspectRatio: 1.0,
           ),
+
           itemCount: gridItems.length,
           itemBuilder: (context, index) {
             final item = gridItems[index];
